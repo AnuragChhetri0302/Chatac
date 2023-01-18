@@ -1,0 +1,19 @@
+$color-mint: #C5FAD5;
+$color-Butter: #FFFFD2;
+$color-purple :#AA96DA;
+
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+      @content;
+    }
+  }
+  @mixin tablet {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin laptop {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
