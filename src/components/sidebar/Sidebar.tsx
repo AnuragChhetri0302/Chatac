@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Chats from '../chats/Chats'
+import Header from './header/Header'
 import style from './Sidebar.module.scss'
 
 
@@ -7,18 +9,11 @@ type Sidebarprops={
 }
 
 const Sidebar = ({open}:Sidebarprops) => {
+  
   return (
     <div className={open? `${style.container} ${style.collapse}`: `${style.container}`}>
-        <ul>
-            <li>hello</li>
-            <li>hello</li>
-
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
- 
-        </ul>
+        <Header/>
+        <Chats/>
     </div>
   )
 }

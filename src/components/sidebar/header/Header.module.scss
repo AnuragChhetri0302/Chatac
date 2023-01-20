@@ -1,0 +1,37 @@
+@import '../../../utilities/variables.scss';
+
+.container {
+  min-height: 10vh;
+  background-color: $color-Blue-Diamond;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  @include mobile {
+    min-height: 7vh;
+  }
+  .listAction {
+    &:not(:hover, :focus, :focus-visible, :focus-within) {
+      cursor: pointer;
+      .dropdown {
+        visibility: hidden;
+       
+      }
+    }
+    
+
+    .dropdown {
+      position: absolute;
+      right: 0%;
+      background-color: $color-mint;
+      button {
+        cursor: pointer;
+        width: 100%;
+        padding: 20px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}

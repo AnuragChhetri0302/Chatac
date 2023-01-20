@@ -1,14 +1,36 @@
 @import '../../utilities/variables.scss';
 
-.container{
-    min-height: 10vh;
-    background-color: $color-mint;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding : 0 20px;
-    @include mobile{
-        min-height: 7vh;
+.container {
+  min-height: 10vh;
+  background-color: $color-mint;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  @include mobile {
+    min-height: 7vh;
+    
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    display: none;
+
+    &:hover {
+      cursor: pointer;
     }
 
+    @include mobile{
+        display: block;
+        
+        
+    }
+    @include tablet{
+        display: block;
+        
+        
+    }
+
+  } 
 }

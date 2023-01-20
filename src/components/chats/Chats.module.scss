@@ -1,0 +1,52 @@
+@import '../../utilities/variables.scss';
+
+.container {
+  overflow-y: scroll;
+  height: 90vh;
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  
+  @include mobile {
+    height: 93vh;
+  }
+
+
+  #findUser {
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Comfortaa', cursive;
+    &:focus {
+      outline: none;
+    }
+    
+  }
+  .chats {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    border-radius: 15px;
+    border-bottom: 1px solid black;
+    align-items: stretch;
+    &:focus{
+        background-color: $color-mint ;
+    }
+
+    
+    
+    .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2px;
+    }
+  }
+}
